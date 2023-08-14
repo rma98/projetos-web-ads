@@ -10,7 +10,7 @@ body {
 
 div {
     min-width: 500px;
-    max-width: 1500px;
+    max-width: 1650px;
     margin: auto;
     font-family: 'Merriweather', serif;
     background-color: #D9D7DD;
@@ -30,7 +30,7 @@ header h2 {
 }
 
 main section {
-    text-align: justify
+    text-align: justify;
 }
 
 main section > h2 {
@@ -49,8 +49,9 @@ main p {
     text-indent: 3em;
 }
 
-section {
-    
+.artigo > p {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 article#sobre-mim {
