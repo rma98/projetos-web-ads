@@ -71,31 +71,34 @@ article a:hover {
     text-decoration: underline;
 }
 
+footer {
+    text-align: center;
+}
+
 footer ul {
     list-style: none;
-    text-transform: uppercase;
-    position: absolute;
-    left: 580px;
-    
+    text-transform: uppercase; 
 }
 
 footer li {
     display: inline;
-    margin: 10px;
-    color: #D9D7DD;   
+    margin-left: 10px;
+       
 }
 
 footer li:hover {
     background-color: #444554;
     transition: 0.5s;
+    color: #D9D7DD;
 }
 
 footer a {
     text-decoration: none;
-    color: #D9D7DD;
+    color: black;
 }
 
 footer a:hover {
     background-color: #444554;
     transition: 0.5;
+    color: #D9D7DD;
 }
