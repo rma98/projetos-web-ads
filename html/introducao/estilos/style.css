@@ -38,6 +38,7 @@ section > h1 {
 section > ul > li {
     padding-bottom: 10px;
     text-align: justify;
+    font-size: .8em;
 }
 
 div.imagem {
