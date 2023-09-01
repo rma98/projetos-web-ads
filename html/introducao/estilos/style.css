@@ -33,6 +33,7 @@ div#container > main {
 
 section > h1 {
     padding: 10px;
+    font-size: 1.3em;
 }
 
 section > ul > li {
