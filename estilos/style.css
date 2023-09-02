@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    box-sizing: border-box;
+    background: black url('/imagens/quadro.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+div#container {
+    position: relative;
+    height: 100vh;
+}
+
+div#container > main {
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+section > h1 {
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+section > ul > li {
+    padding-bottom: 10px;
+    text-align: justify;
+    font-size: .8em;
+}
+
+div.imagem {
+    text-align: justify;
+}
+
+section img#foto {
+    width: 200px;
+}
+
+section#click {
+    background: black url('/imagens/action.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+section#click > div#action > a {
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+}
+
+section#click > div#action > a:hover {
+    color: rgb(129, 0, 0);
+    transition: .3s;
+}
+
+div.col-12 {
+    text-align: right;
+}
+
+div.col-12 > a#first {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+div.col-12 > a#first:hover {
+    background-color: rgb(43, 43, 43);
+    transition: .3s;
+}
+
+div.col-6 > div#anterior {
+    text-align: left;
+}
+
+div.col-6 > div#anterior > a {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+div.col-6 > div#anterior > a:hover {
+    background-color: rgb(43, 43, 43);
+    transition: .3s;
+}
+
+div.col-6 > div#proximo {
+    text-align: right;
+}
+
+div.col-6 > div#proximo > a {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+div.col-6 > div#proximo > a:hover {
+    background-color: rgb(43, 43, 43);
+    transition: .3s;
+}
+
+div.col-12 > div#ultima {
+    padding: 20px 0px;
+    text-align: left;
+}
+
+div.col-12 > div#ultima > a#last {
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+div.col-12 > div#ultima > a#last:hover {
+    background-color: rgb(43, 43, 43);
+    transition: .3s;
+}
+
+footer > p {
+    font-weight: bolder;
+}
+
+div#redes-sociais ul {
+    list-style-type: none;
+}
+
+div#redes-sociais ul > li {
+    display: inline-block;
+}
+
+div#redes-sociais i {
+    font-weight: bolder;
+    color: black;
+    margin-left: 3px;
+}
+
+div#redes-sociais i:hover {
+    border: 2px solid rgb(43, 43, 43);
+    border-radius: 50%;
+    transition: .3s;
+}
