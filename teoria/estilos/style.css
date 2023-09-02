@@ -53,6 +53,14 @@ section img#foto {
 section#click {
     background: black url('../imagens/action.jpg') no-repeat center center;
     background-size: cover;
+    padding: 10px;
+    border: 3px solid black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.515);
+
+}
+
+section#click > div#action {
+    padding: 10px;
 }
 
 section#click > div#action > a {
@@ -64,6 +72,10 @@ section#click > div#action > a {
 section#click > div#action > a:hover {
     color: rgb(129, 0, 0);
     transition: .3s;
+}
+
+div.row {
+    padding: 10px;
 }
 
 div.col-12 {
