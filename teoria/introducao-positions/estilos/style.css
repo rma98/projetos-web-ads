@@ -33,8 +33,10 @@ div {
 }
 
 .botao {
+    background-color: #528;
     position: absolute;
     text-transform: uppercase;
+    text-align: center;
     font-weight: bolder;
     border-radius: 10px;
     width: 265px;
@@ -49,12 +51,14 @@ div {
 .btn {
     display: block;
     color: white;
-    padding: 20px;
+    padding: 20px 0px;
     text-decoration: none;
+    font-size: 1.5em;
 }
 
 .btn:hover {
     color: #222;
+    text-decoration: underline;
 }
 
 /* FIXED */
