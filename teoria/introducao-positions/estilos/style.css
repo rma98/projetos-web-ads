@@ -32,6 +32,31 @@ div {
     right: 20px;
 }
 
+.botao {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 10px;
+    width: 265px;
+    top: 0px;
+    left: 20%;
+    transition: .3s;
+}
+.botao:hover {
+    background-color: #881;
+}
+
+.btn {
+    display: block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: #222;
+}
+
 /* FIXED */
 html {
     padding-bottom: 1000px;
