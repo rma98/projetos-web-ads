@@ -30,7 +30,7 @@
 
 @media (max-width: 637px) {
     .lista-vantagens-itens {
-        font-size: 0.8em;
+        font-size: .8em;
     }
 }
 
@@ -41,13 +41,8 @@
 }
 
 @media (max-width: 591px)  {
-    .cabecalho-menu-itens,
-    .links-uteis
-     {
-        font-size: .8em;
-    }
     .lista-vantagens-itens {
-        font-size: .5em;
+        font-size: .4em;
     }
 }
 
@@ -58,7 +53,9 @@
 }
 
 @media (max-width: 510px) {
-    .contatos i {
+    .contatos i,
+    .cabecalho-menu-itens,
+    .links-uteis {
         font-size: .5em;
     }
     .faq-subtitulo,
