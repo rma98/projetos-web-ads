@@ -41,14 +41,13 @@
 }
 
 @media (max-width: 591px)  {
+    .cabecalho-menu-itens,
+    .links-uteis
+     {
+        font-size: .8em;
+    }
     .lista-vantagens-itens {
         font-size: .5em;
-    }
-}
-
-@media (max-width: 589px) {
-    .links-uteis {
-        font-size: .8em;
     }
 }
 
