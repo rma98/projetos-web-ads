@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #431113, #faf2e9);
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #faf2e9;
+    color: #431113;
+    font-family: 'Sarala', sans-serif;
+}
+
+.cabecalho-logo {
+    height: 160px;
+}
+
+.cabecalho-menu,
+.menu-links-uteis {
+    display: flex;
+    gap: 1rem;
+}
+
+.cabecalho-menu-itens,
+.rodape-links,
+.links-uteis {
+    text-decoration: none;
+    color: #431113;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.cabecalho-menu-itens:hover,
+.rodape-links:hover,
+.links-uteis:hover {
+    color: rgba(64, 11, 11, 0.726);
+}
+
+.cabecalho-botao {
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Righteous', cursive;
+    font-size: 1.3em;
+    background-color: #400b0b;
+    color: #fff;
+    transition: .3s;
+}
+
+.cabecalho-paragrafo {
+    font-size: 1.3em;
+}
+
+.cabecalho-botao:hover {
+    background-color: rgba(64, 11, 11, 0.726);
+}
+
+.conteudo {
+    margin-bottom: 50px;
+}
+
+.conteudo,
+.vantagens,
+.conteudo-secundario,
+.rodape {
+    border-top: 0.4px solid #400b0b;
+}
+
+.conteudo-fotos,
+.conteudo-descricao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    padding: 20px; 
+    margin: 0 auto;
+    border: .4px solid #400b0b; 
+}
+
+.carousel-caption h5,
+.carousel-caption p,
+.conteudo-descricao,
+.conteudo-vantagens,
+.conteudo-secundario,
+.rodape {
+    background-color: #faf2e9;
+    font-family: 'Sarala', sans-serif;
+    font-size: 1.3em;
+    color: #400b0b;
+}
+
+.conteudo-vantagens {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.lista-vantagens {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.form-pesquisa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 10px;
+}
+
+.inp-search,
+.btn-enviar,
+.inp-email,
+.btn-email  {
+    width: 200px;
+    height: 60px;
+    border: none;
+    background-color: #faf2e9;
+    color: #400b0b;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Righteous', cursive;
+    font-size: 1.3em;
+    transition: .3s;
+}
+
+::placeholder {
+    font-family: 'Righteous', cursive;
+    color: #400b0b;
+    padding: 5px;
+}
+
+.contatos {
+    background-color: #faf2e9;
+    font-family: 'Sarala', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fa-envelope,
+.fa-phone,
+.fa-facebook,
+.fa-instagram,
+.fa-youtube {
+    color: #400b0b;
+}
+
+.faq {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 1rem;
+}
+
+.infor-cool {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.rodape-paragrafo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape-links {
+    font-size: 1em;
+}
+
+.rodape-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter-email {
+    font-size: 1.3em;
+}
+
+.inp-email {
+    width: 160px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.btn-email {
+    margin-left: 10px;
+}
+
+.rodape-links-uteis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
