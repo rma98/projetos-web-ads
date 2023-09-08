@@ -1,0 +1,13 @@
+@charset "UFT-8";
+
+@media (max-width: 1617px) {
+    .titulo-logo {
+        display: none;
+    }
+}
+
+@media (max-width: 713px) {
+    .contatos a {
+        display: none;
+    }
+}
