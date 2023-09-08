@@ -6,8 +6,67 @@
     }
 }
 
+@media (max-width: 731px) {
+    .rodape-form {
+        display: none;
+    }
+}
+
 @media (max-width: 713px) {
     .contatos a {
         display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .faq-subtitulo,
+    .faq-detalhes-sumario,
+    .sumario-paragrafo,
+    .lista-ordenada-itens,
+    .lista-desordenada-itens {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 637px) {
+    .lista-vantagens-itens {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 615px) {
+    .contatos i {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 591px)  {
+    .lista-vantagens-itens {
+        font-size: .5em;
+    }
+}
+
+@media (max-width: 589px) {
+    .links-uteis {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 522px) {
+    .rodape-paragrafo {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 510px) {
+    .contatos i {
+        font-size: .5em;
+    }
+    .faq-subtitulo,
+    .faq-detalhes-sumario,
+    .sumario-paragrafo,
+    .lista-ordenada-itens,
+    .lista-desordenada-itens {
+        font-size: .5em;
     }
 }
