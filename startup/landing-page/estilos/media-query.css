@@ -94,3 +94,43 @@
         font-size: .7rem;
     }
 }
+
+@media (max-width: 452px) {
+    .cabecalho-menu-itens {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 445px) {
+    .rodape-paragrafo {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 441px) {
+    .titulo-logo {
+        font-size: 1.3rem;
+    }
+    summary {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 438px) {
+    .carrosel-paragrafo,
+    .lista-vantagens-itens {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 421px) {
+    .cabecalho-paragrafo {
+        font-size: .6rem;
+    }
+}
+
+@media (max-width: 403px) {
+    .cabecalho-menu-itens {
+        font-size: .6rem;
+    }
+}
