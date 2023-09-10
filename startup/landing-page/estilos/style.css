@@ -13,6 +13,7 @@ body {
     background: linear-gradient(to right, #431113, #faf2e9);
 }
 
+/* CABEÇALHO */
 .cabecalho {
     display: flex;
     align-items: center;
@@ -69,6 +70,7 @@ body {
     background-color: rgba(64, 11, 11, 0.726);
 }
 
+/* CONTEÚDO */
 .conteudo {
     margin-bottom: 50px;
 }
@@ -107,13 +109,17 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .lista-vantagens {
     display: flex;
     gap: 1rem;
     list-style: none;
+}
+
+.conteudo-vantagens-subtitulo {
+    margin: 0 auto;
 }
 
 .form-pesquisa {
@@ -181,6 +187,7 @@ body {
     padding: 5px;
 }
 
+/* RODAPÉ */
 .rodape-paragrafo {
     display: flex;
     flex-direction: column;
