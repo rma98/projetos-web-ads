@@ -134,3 +134,27 @@
         font-size: .6rem;
     }
 }
+
+@media (max-width: 382px) {
+    .titulo-logo {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 369px) {
+    .contatos i {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 365px) {
+    .rodape-paragrafo {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 361px) {
+    .cabecalho-paragrafo {
+        font-size: .5rem;
+    }
+}
