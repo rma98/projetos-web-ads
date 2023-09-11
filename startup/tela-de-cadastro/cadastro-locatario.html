@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Tela de Cadastro para Locatário</title>
+</head>
+<body>
+    <div id="main-container">
+        <h1>Cadastre-se para acessar a plataforma <i class="fa-solid fa-users"></i></h1>
+        <form action="#" method="post" id="register-form" autocomplete="on">
+            <div class="full-box">
+                <label for="email"><i class="fa-solid fa-envelope"></i></label>
+                <input type="email" name="email" id="email" placeholder="Digite o seu e-mail" autocomplete="email">
+            </div>
+            <div class="half-box spacing">
+                <label for="name">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" autocomplete="name">
+            </div>
+            <div class="half-box">
+                <label for="lastname">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite ">
+            </div>
+            <div class="half-box spacing">
+                <label for="password"><i class="fa-solid fa-key"></i></label>
+                <input type="password" name="password" id="password" placeholder="Digite a sua senha">
+            </div>
+            <div class="half-box">
+                <label for="passconfirmation"><i class="fa-solid fa-key"></i></label>
+                <input type="password" name="passconfirmation" id="passconfirmation" placeholder="Confirme a sua senha">
+            </div>
+            <div class="half-box spacing">
+                <label for="end">Endereço</label>
+                <input type="text" name="end" id="end" placeholder="Digite o nome da sua rua">
+            </div>
+            <div class="half-box">
+                <label for="city">Cidade</label>
+                <input type="text" name="city" id="city" placeholder="Digite o nome da sua cidade">
+            </div>
+            <div class="half-box spacing">
+                <label for="state">Estado</label>
+                <input type="text" name="state" id="state" placeholder="Digite o nome do seu estado">
+            </div>
+            <div class="half-box">
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep" placeholder="Digite o seu CEP">
+            </div>
+            <div class="full-box">
+                <label for="contact">Contato <i class="fa-solid fa-phone"></i></label>
+                <input type="text" name="contact" id="contact" placeholder="Digite o seu contato">
+            </div>
+            <legend>Preferência de Contato</legend>
+            <div class="half-box spacing">
+                <input type="radio" name="fav" id="fav-email">
+                <label for="fav-email"><i class="fa-solid fa-envelope"></i></label>
+            </div>
+            <div class="half-box">
+                <input type="radio" name="fav" id="fav-phone">
+                <label for="fav-phone"><i class="fa-solid fa-phone"></i></label>
+            </div>
+            <div class="full-box">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement" id="agreement-label">Eu li e aceito os <a href="#">termos de uso</a></label>
+            </div>
+            <div class="full-box">
+                <input type="submit" id="btn-submit" value="Registrar">
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <script src="js/scripts.js"></script>
+    <!-- Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/29dd473d90.js" crossorigin="anonymous"></script>
+</body>
+</html>
