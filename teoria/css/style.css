@@ -13,7 +13,7 @@ html {
 
 body {
     box-sizing: border-box;
-    background: black url('../imagens/quadro.jpg') no-repeat center center;
+    background: black url('../img/quadro.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -51,7 +51,7 @@ section img#foto {
 }
 
 section#click {
-    background: black url('../imagens/action.jpg') no-repeat center center;
+    background: black url('../img/action.jpg') no-repeat center center;
     background-size: cover;
     padding: 10px;
     border: 3px solid black;
