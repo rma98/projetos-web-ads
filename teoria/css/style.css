@@ -1,53 +1,133 @@
 @charset "UTF-8";
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #000;
+    border: none;
 }
 
-html {
+#container {
     width: 100vw;
     height: 100vh;
-}
-
-body {
-    box-sizing: border-box;
     background: black url('../img/quadro.jpg') no-repeat center center;
     background-size: cover;
 }
 
-div#container {
-    position: relative;
-    height: 100vh;
+#content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
 }
 
-div#container > main {
-    width: 350px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.content-section {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 50%;
     text-align: center;
 }
 
-section > h1 {
-    font-size: 1.3em;
-    padding: 10px;
+.content-section h1 {
+    padding-bottom: 20px;
 }
 
-section > ul > li {
-    padding-bottom: 10px;
+.content-section h1, .content-section h2 {
+    font-size: 2rem;
+}
+
+.content-section ul {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1.1rem;
     text-align: justify;
-    font-size: .8em;
+    font-size: 1.3rem;
+    margin-left: 180px;
+    padding-bottom: 20px;
 }
 
-div.imagem {
+.content-section p {
     text-align: justify;
+    font-size: 1.3rem;
+    padding-right: 180px;
+    margin: 20px;
 }
 
-section img#foto {
-    width: 200px;
+.img-example {
+    position: relative;
+    height: 165px;
+}
+
+#img-example-css {
+    position: absolute;
+    width: 400px;
+    bottom: -40px;
+    left: 400px;
+}
+
+
+.botao {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.botao a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.botao a:hover {
+    background-color: rgb(43, 43, 43);
+    color: rgba(255, 255, 255, 0.704);
+	transition: .3s;
+    padding: 25px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.footer-content i {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    line-height: 40px;
+    margin: 0 5px;
+}
+
+/* .fa-github {
+    background-color: #adbac7;
+    color: #000;
+}
+
+.fa-facebook {
+    background-color: #adbac7;
+    color: #000;
+}
+
+.fa-instagram {
+    background-color: #adbac7;
+    color: #000;
+}
+
+.fa-linkedin {
+    background-color: #adbac7;
+    color: #000;
+} */
+
+.footer-content p {
+    text-align: center;
 }
 
 section#click {
@@ -71,102 +151,5 @@ section#click > div#action > a {
 
 section#click > div#action > a:hover {
     color: rgb(129, 0, 0);
-    transition: .3s;
-}
-
-div.row {
-    padding: 10px;
-}
-
-div.col-12 {
-    text-align: right;
-}
-
-div.col-12 > a#first {
-    padding: 5px;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-div.col-12 > a#first:hover {
-    background-color: rgb(43, 43, 43);
-    transition: .3s;
-}
-
-div.col-6 > div#anterior {
-    text-align: left;
-}
-
-div.col-6 > div#anterior > a {
-    padding: 5px;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-div.col-6 > div#anterior > a:hover {
-    background-color: rgb(43, 43, 43);
-    transition: .3s;
-}
-
-div.col-6 > div#proximo {
-    text-align: right;
-}
-
-div.col-6 > div#proximo > a {
-    padding: 5px;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-div.col-6 > div#proximo > a:hover {
-    background-color: rgb(43, 43, 43);
-    transition: .3s;
-}
-
-div.col-12 > div#ultima {
-    padding: 20px 0px;
-    text-align: left;
-}
-
-div.col-12 > div#ultima > a#last {
-    padding: 5px;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-div.col-12 > div#ultima > a#last:hover {
-    background-color: rgb(43, 43, 43);
-    transition: .3s;
-}
-
-footer > p {
-    font-weight: bolder;
-}
-
-div#redes-sociais ul {
-    list-style-type: none;
-}
-
-div#redes-sociais ul > li {
-    display: inline-block;
-}
-
-div#redes-sociais i {
-    font-weight: bolder;
-    color: black;
-    margin-left: 3px;
-}
-
-div#redes-sociais i:hover {
-    border: 2px solid rgb(43, 43, 43);
-    border-radius: 50%;
     transition: .3s;
 }
