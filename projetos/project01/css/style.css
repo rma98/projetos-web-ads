@@ -100,9 +100,152 @@
 }
 
 /* CABEÇALHO */
+.header {
+    height: 800px;
+    background-image: linear-gradient(68.15deg, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
+    padding-top: 350px;
+}
 
+.headline {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
 
-/* CONTEÚDO *
+.headline h2 {
+    font-family: var(--fonte-destaque3);
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
 
+.headline p {
+    font-family: var(--fonte-destaque4);
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 8px;
+    color: var(--cor0);
+}
+
+#headline-letter {
+    letter-spacing: 15px;
+}
+
+#headline-letter-cont {
+    font-size: 80px;
+}
+
+.explore-btn {
+    display: inline-block;
+    background-color: var(--cor4);
+    padding: 20px;
+    margin-top: 20px;
+    color: var(--cor0);
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.explore-btn:hover {
+    background-color: var(--cor1);
+    color: var(--cor0);
+}
+
+/* CONTEÚDO */
+.content-section {
+    display: inline-block;
+    margin-top: 80px;
+    margin-left:5%;
+    margin-right:5%;
+    padding: 5%;
+}
+
+.content-section-title {
+    text-align: center;
+}
+
+.content-section-title h2 {
+    width: 100%;
+    font-family: var(--fonte-destaque4);
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--cor3);
+}
+
+.content-section-card {
+    display: inline-block;
+    margin-top:5%;
+}
+
+.card {
+    border: 1px solid var(--cor1);
+    display: inline-block;
+    width: 22.5%;
+    padding: 20px;
+    margin: 1%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card-img {
+    max-width: 100%;
+}
+
+.texto-oculto {
+    text-align: center;
+}
+
+.texto-oculto h3 {
+    font-family: var(--fonte-destaque3);
+}
+
+.texto-oculto p {
+    font-family: var(--fonte-destaque4);
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.texto-oculto {
+    display: none;
+}
+
+.card:hover {
+    background: var(--cor2);
+    padding: 40px;
+}
+
+.card:hover .card-img {
+    display: none;
+}
+
+.card:hover .texto-oculto p {
+    color: var(--cor0);
+}
+
+.card:hover .texto-oculto {
+    display: block;
+}
 
 /* RODAPÉ */
+.rodape {
+    margin-top: 100px;
+    height: 400px;
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
+    text-align: center;
+}
+
+.rodape-title {
+    padding: 100px;
+}
+
+.rodape-title h3 {
+    font-family: var(--fonte-destaque3);
+}
+
+.rodape-title p, .policy {
+    font-family: var(--fonte-destaque4);
+    font-size: 1.5rem;
+}
