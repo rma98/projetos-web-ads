@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@media (max-width: 1672px) {
+    .footer {
+        background-color: #fff;
+        padding-top: 20px;
+    }
+}
+@media (max-width: 1250px) {
+    .botao {
+        background-color: #fff;
+
+    }
+}
+
+@media (max-width: 1124px) {
+    .content {
+        flex-flow: column wrap;
+    }
+    .content-section {
+        border: none;
+    }
+    .content-aside-title {
+        padding-top: 0;
+    } 
+}
+
+@media (max-width: 1035px) {
+    .content-section-list, .content-aside-p {
+        padding: 0;
+    }
+}
+
+@media (max-width: 910px) {
+    .content-section-list, .content-aside-p {
+        font-size: .8rem;
+    }
+}
