@@ -36,3 +36,9 @@
         font-size: .8rem;
     }
 }
+
+@media (max-width: 458px) {
+    .botao {
+        flex-flow: column wrap;
+    }
+}
