@@ -47,7 +47,7 @@
     width: 100%;
 }
 
-.logo {
+.logo, .logo-transport {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -55,17 +55,17 @@
     margin-left: 10%;
 }
 
-.logo h1 {
+.logo h1, .logo-transport h1 {
     display: inline-block;
     font-family: var(--fonte-destaque4);
     color: var(--cor3);
 }
 
-#img-logo {
+.img-logo {
     width: 150px;
 }
 
-.menu {
+.menu, .menu-screen-transport {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -73,7 +73,7 @@
     flex: 70%;
 }
 
-.menu a {
+.menu a, .menu-screen-transport a {
     color: var(--cor4);
     text-decoration: none;
     font-family: var(--fonte-destaque1);
@@ -81,7 +81,7 @@
     font-size: 1.5rem;
 }
 
-.menu a:hover {
+.menu a:hover, .menu-screen-transport a:hover {
     color: var(--cor3);
     border-top: 4px solid var(--cor2);
 }
@@ -100,7 +100,7 @@
 }
 
 /* CABEÇALHO */
-.header {
+.header, .header-transport {
     height: 800px;
     background-image: linear-gradient(68.15deg, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
     padding-top: 350px;
@@ -128,18 +128,12 @@
     color: var(--cor0);
 }
 
-#headline-letter {
+.headline-letter {
     letter-spacing: 15px;
 }
 
-#headline-letter-cont {
+.headline-letter-cont {
     font-size: 80px;
-}
-
-.headline-content-oculto {
-    height: 100%;
-    background: url('../img/city.png') no-repeat center center;
-    background-size: contain;
 }
 
 .explore-btn {
@@ -198,6 +192,16 @@
 
 .card-img {
     max-width: 100%;
+}
+
+.card-other-screen {
+    border: 1px solid var(--cor1);
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .texto-oculto {
