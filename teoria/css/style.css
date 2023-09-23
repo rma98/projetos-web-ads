@@ -57,6 +57,7 @@
 
 .botao {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -69,7 +70,7 @@
     padding: 20px;
     border-radius: 10px;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
   
 .botao a:hover {
