@@ -1,1 +1,116 @@
 @charset "UTF-8";
+
+:root {
+    --cor0: #FFFFFF;
+    --cor1: #E44C27;
+    --cor2: #BB2B07;
+    --cor3: #96331A;
+    --cor4: #BF4B2E;
+}
+
+@media (max-width: 1845px) {
+    .logo {
+        flex: 30%;
+    }
+    .menu {
+        flex: 60%;
+    }
+}
+
+@media (max-width: 1462px) {
+    .texto-oculto h3, .texto-oculto p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1357px) {
+    .texto-oculto h3, .texto-oculto p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1182px) {
+    .texto-oculto h3, .texto-oculto p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1238px) {
+    .navbar {
+        position: relative;
+    }
+    .logo {
+        flex: 40%;
+    }
+    .menu {
+        flex: 50%;
+    }
+    .header {
+        height: 735px;
+        padding-top: 175px;
+    }
+}
+
+@media (max-width: 989px) {
+    .headline h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 875px) {
+    .navbar {
+        height: 165px;
+    }
+    .logo {
+        flex-flow: column wrap;
+        margin: 0;        
+    }
+    .logo h1 {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+@media (max-width: 827px) {
+    .header {
+        background:  url('../img/city.png') no-repeat center center;
+        background-size: contain;
+        
+    }
+    .headline h2 {
+        display: none;
+    }
+    .headline p {
+        background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
+    }
+    .header p:hover {
+        opacity: .8;
+    }
+}
+
+@media (max-width: 1660px) {
+    .texto-oculto p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1273px) {
+    .texto-oculto p {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 1108px) {
+    .card {
+        width: 100%;
+        text-align: center;
+    }
+    .card-img {
+        width: 250px;
+    }
+    .texto-oculto h3, .texto-oculto p {
+        font-size: 1.5rem;
+    }
+}
