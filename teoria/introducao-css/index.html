@@ -6,64 +6,55 @@
     <title>O que é CSS?</title>
     <link rel="shortcut icon" href="../ico/favicon-css.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsivo.css" screen="all">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/29dd473d90.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="container">
-        <div id="content">
-            <section class="content-section">
-                <div class="content-title">
-                    <h1>O que é CSS?</h1>
-                </div>
-                <div class="content-body">
-                    <ul>
-                        <li>CSS é uma <strong>linguagem de estilização</strong>.</li>
-                        <li>Um acrônimo para <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets.</li>
-                        <li>Frequentemente <strong>utilizada junto com HTML</strong>.</li>
-                        <li>Podemos posicionar elementos, criar animações, e <strong>reproduzir um layout na web</strong>.</li>
-                        <li>Pode ser <strong>executada diretamente no navegador</strong>, não precisa de setup.</li>
-                    </ul>
-                </div>
-                <div class="content-subtitle">
-                    <h2>A Sintaxe do CSS</h2>
-                </div>
-                <div class="content-body">
-                    <ul>
-                        <li>Para estilizar elementos vamos sempre <strong>seguir alguns passos</strong>.</li>
-                        <li><strong>Escolher a tag</strong> (por meio do nome, classe ou id).</li>
-                        <li><strong>Abrir e fechar chaves</strong>, delimitando o espaço dos estilos do elemento.</li>
-                        <li>Escrever as <strong>regras de estilização</strong>.</li>
-                        <li>Todas as regras devem <strong>terminar com um ponto e vírgula</strong>(;).</li>
-                    </ul>
-                </div>
-                <div class="img-example">
-                    <img id="img-example-css" src="../img/foto-ex01-css.png" alt="Exemplo de CSS">
-                </div>
-            </section>
-            <section class="content-section">
-                <div class="content-subtitle">
-                    <h2>CSS</h2>
-                    <h2>(Cascading Style Sheets)</h2>
-                </div>
-                <div class="content-body">
-                    <p>O <strong>CSS</strong> é responsável pelo parte estética da página.</p>
-                    <p>Por exemplo: Cor do fundo, cor do texto, tamanho da fonte, espaçamento e assim por diante.</p>
-                    <p>CSS foi desenvolvido pelo W3C (World Wide Web Consortium) em 1996, por uma razão bem simples. O HTML não foi projetado para tags que ajudariam a formatar a página, ou seja, deixar ela visualmente bonita.</p>
-                    <p>Podemos dizer que o CSS é na verdade um complemento para o HTML, embora na prática, seja considerada uma outra linguagem de marcação.</p>
-                </div>
-                <div class="botao"><a href="../introducao-html/index.html">Voltar para HTML5</a></div>
-                <div class="botao"><a href="pag01.html">Próximo</a></div>
-                <div class="footer">
-                    <div class="footer-content">
-                        <a href="https://github.com/rma98/" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.facebook.com/robson.albuquerque098/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/robson.albuquerque98/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/robson-monteiro-de-albuquerque-8b3853230/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <p>By: Robson Albuquerque - &copy;2023</p>
+        <div class="content-container">
+            <div class="content">
+                <section class="content-section">
+                    <div class="content-section-title">
+                        <h1>O QUE É CSS</h1>
                     </div>
+                    <div class="content-section-list">
+                        <ul>
+                            <li>CSS é uma <strong>linguagem de estilização</strong>.</li>
+                            <li>Um acrônimo para <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets.</li>
+                            <li>Frequentemente <strong>utilizada junto com HTML</strong>.</li>
+                            <li>Podemos posicionar elementos, criar animações, e <strong>reproduzir um layout na web</strong>.</li>
+                            <li>Pode ser <strong>executada diretamente no navegador</strong>, não precisa de setup.</li>
+                        </ul>
+                    </div>
+                </section>
+                <aside class="content-aside">
+                    <div class="content-aside-title">
+                        <h2>css <br>(Cascading Style Sheets)</h2>
+                    </div>
+                    <div class="content-aside-p">
+                        <p>O <strong>CSS</strong> é responsável pelo parte estética da página.</p>
+                        <p>Por exemplo: Cor do fundo, cor do texto, tamanho da fonte, espaçamento e assim por diante.</p>
+                        <p>CSS foi desenvolvido pelo W3C (World Wide Web Consortium) em 1996, por uma razão bem simples. O HTML não foi projetado para tags que ajudariam a formatar a página, ou seja, deixar ela visualmente bonita.</p>
+                        <p>Podemos dizer que o CSS é na verdade um complemento para o HTML, embora na prática, seja considerada uma outra linguagem de marcação.</p>
+                    </div>
+                </aside>
+            </div>
+            <div class="botao">
+                <a href="../introducao-html/index.html" id="botao-1">Voltar para HTML5</a>
+                <a href="pag01.html" id="botao-2">Próximo</a>
+            </div>
+            <footer class="footer">
+                <div class="footer-content">
+                    <a href="https://github.com/rma98" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://www.facebook.com/robson.albuquerque098/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/robson.albuquerque98/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/robson-monteiro-de-albuquerque-8b3853230" target="_blank"><i class="fa fa-linkedin"></i></a>
                 </div>
-            </section>
+                <div class="footer-p">
+                    <p>&copy;2023 - Robson Albuquerque</p>
+                </div>
+            </footer>
         </div>
     </div>
 </body>
