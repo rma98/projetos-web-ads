@@ -36,7 +36,7 @@
 }
 
 /* BARRA DE NAVEGAÇÃO */
-.navbar {
+.navbar, .navbar-transport, .navbar-energy, .navbar-recycling, .navbar-urban-security {
     display: flex;
     flex-flow: row wrap;
     height: 200px;
@@ -47,7 +47,7 @@
     width: 100%;
 }
 
-.logo, .logo-transport {
+.logo, .logo-transport, .logo-energy, .logo-recycling, .logo-urban-security {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -55,7 +55,7 @@
     margin-left: 10%;
 }
 
-.logo h1, .logo-transport h1 {
+.logo h1, .logo-transport h1, .logo-energy h1, .logo-recycling h1, .logo-urban-security h1 {
     display: inline-block;
     font-family: var(--fonte-destaque4);
     color: var(--cor3);
@@ -65,7 +65,7 @@
     width: 150px;
 }
 
-.menu, .menu-screen-transport {
+.menu, .menu-transport, .menu-energy, .menu-recycling, .menu-urban-security {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -73,7 +73,7 @@
     flex: 70%;
 }
 
-.menu a, .menu-screen-transport a {
+.menu a, .menu-transport a, .menu-energy a, .menu-recycling a, .menu-urban-security a {
     color: var(--cor4);
     text-decoration: none;
     font-family: var(--fonte-destaque1);
@@ -81,7 +81,7 @@
     font-size: 1.5rem;
 }
 
-.menu a:hover, .menu-screen-transport a:hover {
+.menu a:hover,.menu-transport a:hover, .menu-energy a:hover, .menu-recycling a:hover, .menu-urban-security a:hover {
     color: var(--cor3);
     border-top: 4px solid var(--cor2);
 }
@@ -100,27 +100,27 @@
 }
 
 /* CABEÇALHO */
-.header, .header-transport {
+.header, .header-transport, .header-energy, .header-recycling, .header-urban-security {
     height: 800px;
     background-image: linear-gradient(68.15deg, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
     padding-top: 350px;
 }
 
-.headline {
+.headline, .headline-transport, .headline-energy, .headline-recycling, .headline-urban-security {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
 }
 
-.headline h2 {
+.headline h2, .headline-transport h2, .headline-energy h2, .headline-recycling h2, .headline-urban-security h2 {
     font-family: var(--fonte-destaque3);
     font-weight: 900;
     padding: 0;
     margin: 0;
 }
 
-.headline p {
+.headline p, .headline-transport p, .headline-energy p, .headline-recycling p, .headline-urban-security p {
     font-family: var(--fonte-destaque4);
     text-align: center;
     font-size: 1.5rem;
