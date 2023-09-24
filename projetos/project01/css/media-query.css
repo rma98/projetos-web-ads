@@ -58,7 +58,7 @@
     .menu {
         flex: 50%;
     }
-    .header {
+    .header, .header-about-us {
         height: 735px;
         padding-top: 175px;
     }
@@ -105,11 +105,21 @@
         background-size: contain;
 
     }
+    .header-about-us {
+        background: url('../img/teamwork.png') no-repeat center center;
+        background-size: contain;
+    }
     .headline h2 {
         display: none;
     }
     .headline p {
         background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
+    }
+    .header-about-us p {
+        opacity: .8;
+    }
+    .header-about-us p:hover {
+        opacity: .7;
     }
     .header p:hover {
         opacity: .8;
