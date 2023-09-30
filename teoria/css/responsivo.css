@@ -42,3 +42,13 @@
         flex-flow: column wrap;
     }
 }
+
+@media (max-width: 358px) {
+    .content-aside {
+        height: 350px;
+        overflow: hidden;
+    }
+    .content-aside:hover {
+        overflow: auto;
+    }
+}
