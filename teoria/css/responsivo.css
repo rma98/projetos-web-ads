@@ -44,11 +44,11 @@
 }
 
 @media (max-width: 358px) {
-    .content-aside {
-        height: 220px;
+    .content-aside-p {
+        height: 90px;
         overflow: hidden;
     }
-    .content-aside:hover {
+    .content-aside-p:hover {
         overflow: auto;
     }
 }
