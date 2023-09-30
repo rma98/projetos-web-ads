@@ -45,7 +45,7 @@
 
 @media (max-width: 358px) {
     .content-aside {
-        height: 350px;
+        height: 220px;
         overflow: hidden;
     }
     .content-aside:hover {
