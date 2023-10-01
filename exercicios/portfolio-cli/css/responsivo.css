@@ -28,6 +28,9 @@
     .about-me, .challenge, .achievement, .learned {
         flex-flow: column wrap;
     }
+    .about-me p {
+        padding-top: 10px;
+    }
     .photo {
         width: 450px;
     }
