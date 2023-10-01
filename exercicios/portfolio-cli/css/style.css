@@ -73,7 +73,6 @@ body {
 
 /* CONTEÚDO DA PÁGINA */
 .container {
-    border: 1px solid black;
     margin-bottom: 80px;
 }
 
@@ -92,7 +91,6 @@ body {
 }
 
 .about-me, .challenge, .achievement, .learned {
-    border: 1px solid red;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -102,7 +100,6 @@ body {
 }
 
 .project {
-    border: 1px solid red;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -112,7 +109,6 @@ body {
 }
 
 .testimonial {
-    border: 1px solid red;
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
@@ -129,7 +125,6 @@ body {
 }
 
 .video {
-    border: 1px solid red;
     display: flex;
     flex-flow: column wrap;
     align-items: flex-start;
@@ -150,12 +145,10 @@ body {
 }
 
 .content-about-me-photo, .content-challenge-photo, .content-achievement-photo, .content-learned-photo {
-    border: 1px solid green;
     flex: 23%;   
 }
 
 .content-about-me, .content-challenge, .content-achievement, .content-learned {
-    border: 1px solid orange;
     flex: 77%;
 }
 
@@ -221,7 +214,6 @@ body {
 
 /* RODAPÉ */
 .footer {
-    border: 1px solid red;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -231,7 +223,6 @@ body {
 }
 
 .my-data {
-    border: 1px solid green;
     flex: 50%;
     display: flex;
     flex-flow: column wrap;
@@ -259,12 +250,10 @@ body {
 }
 
 .form {
-    border: 1px solid blue;
     flex: 50%;
 }
 
 .formulario {
-    border: 1px solid darkmagenta;
     display: flex;
     flex-flow: column wrap;
 }
@@ -315,7 +304,6 @@ input[type="submit"] {
 
 .social-media {
     margin-top: 80px;
-    border: 1px solid yellow;
     flex: 100%;
 }
 
