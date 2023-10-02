@@ -18,81 +18,91 @@ body {
 
 .container {
     border: 1px solid black;
+    width: 100vw;
+    height: 100vh;
 }
 
 .container-content {
-    border: 1PX solid red;
-    width: 99%;
-    height: 70%;
-    margin-top: 160px;
+    border: 1px solid red;
+    margin-top: 67px;
+    height: 82%;
 }
 
 .content {
     border: 1px solid green;
     margin: 10px;
+    height: 80%;
 }
 
-.content-body, .new-content {
-    border: 1px solid orange;
-    padding: 10px;
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.title, .subtitle {
-    text-align: center;
-    border: 1px solid purple;
-    display: block;
+.col-6 {
+    border: 1px solid blue;
 }
 
-.title h1, .subtitle h2 {
-    padding: 10px;
+#title {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
     font-weight: bold;
 }
 
-.content-item ul > li {
-    padding-bottom: 10px;
-    font-size: 1rem;
+#item  {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
 }
 
-.new-content {
-    padding: 10px;
-}
-
-.subtitle, .nw-content {
-    flex: 50%;
-}
-
-.nw-content p {
-    font-size: 1rem;
-    text-indent: 1rem;
-}
-
-.press-button {
+#press-oculto {
     display: none;
 }
 
-.choice {
+#press-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#subtitle {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#subtitle-cont {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.footer {
     display: flex;
     flex-flow: row wrap;
 }
 .opc-1, .opc-2 {
-    flex: 50%;
+    flex: 20%;
+    cursor: pointer;
 }
+
 .opc-2 {
     display: flex;
     justify-content: flex-end;
 }
 
-.footer {
-    display: flex;
-    flex-flow: column wrap;
-    
-    align-items: center;
-    justify-content: center;
-}
 .social-media {
+    flex: 58%;
     display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
 }
+
 .social-media i {
     width: 40px;
     height: 40px;
@@ -108,12 +118,7 @@ body {
     transition: .3s;
 }
 
-.footer {
-    background-color: #fff;
-    padding: 10px;
-}
-
-.footer p {
+.social-media p {
     font-weight: bold;
 }
 
