@@ -6,132 +6,131 @@
     box-sizing: border-box;
     color: #000;
     border: none;
+    font-family: Helvetica, sans-serif;
 }
 
-#container {
-    position: relative;
+body {
     width: 100vw;
     height: 100vh;
-    background: black url('../img/quadro.jpg') no-repeat center center;
+    background: #ccc url('../img/quadro.jpg') no-repeat center center;
     background-size: cover;
 }
 
-.content-container {
-    position: absolute;
-    width: 80%;
+.container {
+    border: 1px solid black;
+}
+
+.container-content {
+    border: 1PX solid red;
+    width: 99%;
     height: 70%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 160px;
 }
 
 .content {
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+    border: 1px solid green;
+    margin: 10px;
 }
 
-.content-section {
-    border-right: 3px solid black;
+.content-body, .new-content {
+    border: 1px solid orange;
+    padding: 10px;
 }
 
-.content-section-title, .content-aside-title {
+.title, .subtitle {
     text-align: center;
-    padding-top: 20px;
+    border: 1px solid purple;
+    display: block;
 }
 
-.content-section-title h1, .content-aside-title h2 {
-    font-size: 2rem;
+.title h1, .subtitle h2 {
+    padding: 10px;
+    font-weight: bold;
 }
 
-.content-section-list, .content-aside-p {
-    text-align: justify;
-    padding: 10px 20px;
-    font-size: 1.2rem;
+.content-item ul > li {
+    padding-bottom: 10px;
+    font-size: 1rem;
 }
 
-.content-section-list ul > li {
-    padding-bottom: 20px;
+.new-content {
+    padding: 10px;
 }
 
-.botao {
+.subtitle, .nw-content {
+    flex: 50%;
+}
+
+.nw-content p {
+    font-size: 1rem;
+    text-indent: 1rem;
+}
+
+.press-button {
+    display: none;
+}
+
+.choice {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    color: rgb(255, 255, 255);
 }
-
-.botao a {
-    text-decoration: none;
-    background-color: black;
-    padding: 20px;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 1.2rem;
+.opc-1, .opc-2 {
+    flex: 50%;
 }
-  
-.botao a:hover {
-    background-color: rgb(43, 43, 43);
-    color: rgba(255, 255, 255, 0.704);
-    transition: .3s;
-    padding: 25px;
+.opc-2 {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .footer {
     display: flex;
     flex-flow: column wrap;
+    
     align-items: center;
     justify-content: center;
 }
-
-.footer-content i {
-    height: 40px;
+.social-media {
+    display: flex;
+    gap: 1rem;
+}
+.social-media i {
     width: 40px;
-    border-radius: 50%;
+    height: 40px;
     line-height: 40px;
     text-align: center;
     color: #fff;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    cursor: pointer;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+.social-media i:hover {
+    opacity: .6;
     transition: .3s;
 }
 
-.footer-content i, .footer-p p{
-    font-size: 1.2rem;
+.footer {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.footer p {
     font-weight: bold;
-}
-
-.img-example {
-    position: relative;
-    height: 165px;
-}
-
-#img-example-css {
-    position: absolute;
-    width: 400px;
-    bottom: -40px;
-    left: 400px;
-}
-
-.fa-github {
-    background-color: #000;
 }
 
 .fa-facebook {
     background-color: #3B5998;
 }
 
-
 .fa-instagram {
-    background-image: linear-gradient(45deg,#F58529, #FEDA77, #DD2A7B, #8134AF, #155ED4);
+    background-image: linear-gradient(#515BD4, #B134AF, #DD2A7B, #FEDA77, #F58529);
 }
 
 .fa-linkedin {
     background-color: #007AB9;
+}
+
+.fa-github {
+    background-color: #000;
 }
 
 section#click {
