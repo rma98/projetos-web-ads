@@ -58,3 +58,9 @@
         font-size: .7rem;
     }
 }
+
+@media (max-width: 469px) {
+    #title {
+        font-size: 1rem;
+    }
+}
