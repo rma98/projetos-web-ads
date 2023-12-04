@@ -12,6 +12,8 @@
 }
 
 :root {
+    font-size: 62.5%;
+
     --cor0: #FFFFFF;
     --cor1: #E44C27;
     --cor2: #BB2B07;
@@ -262,6 +264,43 @@
 
 .card:hover .texto-oculto, .card-other-screen:hover .texto-oculto {
     display: block;
+}
+
+/* TABLELA  */
+main {
+    padding-top: 19rem;
+    background-image: linear-gradient(68.15deg, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
+}
+
+main section.tabela {
+    padding: 2rem 0;
+
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+}
+
+main section.tabela table {
+    text-align: center;
+}
+
+main section.tabela table thead th {
+    padding: 5rem;
+    font-size: 2rem;
+    font-family: var(--fonte-destaque4);
+    border: .2rem solid var(--cor0);
+    color: var(--cor0);
+}
+
+main section.tabela table tbody tr td  {
+    padding: 1.5rem;
+    font-size: 2rem;
+    border: .2rem solid var(--cor0);
+    color: var(--cor0);
+}
+
+main section.tabela table tbody tr td img {
+    width: 8rem;
 }
 
 /* RODAPÉ */
