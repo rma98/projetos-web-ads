@@ -1,4 +1,36 @@
-let ajax = new XMLHttpRequest();
+async function loadCities() {
+    let carbonos = []
+    for (let index = 0; index < 3; index++) {
+            
+        const response = await fetch('http://200.133.17.234:5000/future_city');
+        const obj = await response.json()
+        carbonos.push({ 'co2_evitado': obj.co2_evitado, 'co2_mes': obj.co2_mes })
+        console.log(obj);
+    }
+    
+    console.log(carbonos);
+
+    document.getElementById('show-co2-mes-palmares').innerHTML = `${carbonos[0].co2_mes}`;
+    document.getElementById('show-co2-evitado-palmares').innerHTML = `${carbonos[0].co2_evitado}`;
+    document.getElementById('show-co2-mes-agua-preta').innerHTML = `${carbonos[1].co2_mes}`;
+    document.getElementById('show-co2-evitado-agua-preta').innerHTML = `${carbonos[1].co2_evitado}`;
+    document.getElementById('show-co2-mes-ribeirao').innerHTML = `${carbonos[2].co2_mes}`;
+    document.getElementById('show-co2-evitado-ribeirao').innerHTML = `${carbonos[2].co2_evitado}`;
+
+    let somaMes = 0;
+    let SomaMesEvitado = 0;
+    for (let carbono in carbonos) {
+        somaMes += carbonos[carbono].co2_mes
+        SomaMesEvitado += carbonos[carbono].co2_evitado
+    }
+
+    document.getElementById('total-mes').innerHTML = `${somaMes}`;
+    document.getElementById('total-evitado').innerHTML = `${SomaMesEvitado}`;
+    }
+
+loadCities();
+
+/*let ajax = new XMLHttpRequest();
 ajax.open('GET', 'http://200.133.17.234:5000/future_city');
 ajax.send();
 
@@ -25,9 +57,9 @@ ajax.onload = function () {
         document.getElementById('total-mes').innerHTML = `${somaMes}`;
         document.getElementById('total-evitado').innerHTML = `${somaEvitado}`;
     }
-}
+}*/
 
-function buscarCEP() {
+/*function buscarCEP() {
     let input = document.getElementById('cep').value;
 
     let ajax = new XMLHttpRequest();
@@ -47,7 +79,7 @@ function buscarCEP() {
             </div>`;
         }
     }
-}
+}*/
 
 let listaCidades = [
     { foto: `<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Bandeira_de_Palmares.jpg/1200px-Bandeira_de_Palmares.jpg" alt="Logo de Palmares width="80">`, nome: 'PALMARES' },
@@ -64,7 +96,6 @@ function exibirNaTela() {
             <td>${listaCidades[0].nome}</td>
             <td id="show-co2-mes-palmares"></td>
             <td id="show-co2-evitado-palmares"></td>
-            <td rowspan="5" id="show-cep"><input type="text" name="cep" id="cep" placeholder="DIGITE O CEP DA CIDADE"> <input type="button" value="CONSULTAR" onclick="buscarCEP()"></td>
         </tr>
         <tr>
             <td>${listaCidades[1].foto}</td>
